@@ -1,0 +1,60 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+html,body{
+height:100%;
+width:100%;
+overflow:hidden;
+}
+
+.panel{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+transition:background 1s;
+}
+
+.panel img{
+width:420px;
+margin-bottom:20px;
+}
+
+h1{
+font-size:45px;
+color:white;
+}
+
+/* DAY COLORS */
+.intro{background:black;}
+.morning{background:#ffae42;}
+.day{background:#87ceeb;}
+.evening{background:#ff7f50;}
+.night{background:#0b132b;}
+
+#butterfly{
+position:absolute;
+
+/* BIG SIZE */
+width:700px;
+
+/* Center on screen */
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+
+/* smooth animation */
+pointer-events:none;
+z-index:10;
+}
+
+/* Scooty */
+#scooty{
+position:relative;
+left:-600px;
+}
